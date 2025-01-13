@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.cal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.days {
+  width: 100px;
+  text-align: center;
+  height: 1.8rem;
+  font-size: 1.2rem;
+  background-color: rgb(255, 141, 141);
+}
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 100px);
+  grid-template-rows: repeat(6, 85px);
+}
+.date {
+  background-color: wheat;
+  border: 1px dotted hsla(0, 0%, 0%, 0.212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.month{
+    background-color: rgb(255, 170, 222);
+    width: 700px;
+    text-align: center;
+}
+.monthName{
+    font-size: 2rem;    
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 310px;
+}
+label{
+    font-size: 1.5rem;
+}
+button{
+    background-color: ghostwhite;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 25px;
+}
+.input input{
+    height: 45px;
+    width:250px;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 12px;
+    border: none;
+    margin: 12px;
+    background-color: rgba(128, 128, 128, 0.349);
+}
+.year{
+    font-size: 3rem;
+}
+
