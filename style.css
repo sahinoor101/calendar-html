@@ -18,6 +18,10 @@
   font-size: 1.2rem;
   background-color: rgb(255, 141, 141);
 }
+.date:nth-child(7n+1){
+  background-color: hsla(0, 97%, 54%, 0.7);
+  color: white;
+}
 .calendar {
   display: grid;
   grid-template-columns: repeat(7, 100px);
