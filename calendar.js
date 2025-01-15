@@ -29,7 +29,7 @@ function getValue() {
     let month1 = month.value;
     MonthName.textContent = arrOfName[month.value - 1] + "   " + year1;
     let value = getFirstday(year1, month1);
-    display(value, month1);
+    display(value, month1 ,year1);
 }
 
 function getFirstdayOfMonth(month, year, firstday) {
@@ -43,7 +43,7 @@ function getFirstdayOfMonth(month, year, firstday) {
     }
     return firstday % 7;
 }
-function display(value, month) {
+function display(value, month ,year) {
     let noOfDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     if (isLeap(year)) {
         noOfDays[1] = 29;
